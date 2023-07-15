@@ -15,6 +15,12 @@ const router = createRouter({
       meta: { requiresAuth: false }, 
       component: () => import('@/views/StaffList.vue')
     },
+    {
+      path: '/collaborator',
+      name: 'CollaboratorList',
+      meta: { requiresAuth: false }, 
+      component: () => import('@/views/CollaboratorList.vue')
+    },
   ]
 })
 

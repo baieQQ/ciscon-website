@@ -4,16 +4,16 @@
       <router-link to="/" class="link">
         <h2>主頁</h2>
       </router-link>
-      <div class="link">
+      <router-link to="/agendaTable" class="link">
         <h2>議程表</h2>
-      </div>
+      </router-link>
       <img class="logo" src='../assets/logo_1.png'>
       <router-link to="/staff" class="link">
         <h2>行政團隊</h2>
       </router-link>
-      <div class="link">
+      <router-link to="/collaborator" class="link">
         <h2>合作社群</h2>
-      </div>
+      </router-link>
     </div>
   </div>
 </template>
@@ -30,10 +30,8 @@ export default {
   position: fixed
   top: 0
   left: 50%
-  width: 70%
-  height: 150px
+  height: 130px
   transform: translate(-50%, 0)
-  margin-top: 20px 0
   padding: 0px 100px
 
   display: flex
