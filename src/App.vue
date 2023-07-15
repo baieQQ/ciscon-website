@@ -1,6 +1,7 @@
 <template>
   <div class="main">
-    <NavBar></NavBar>
+    <div v-if="$router.currentRoute.value.path === '/'"><NavBar></NavBar></div>
+    <div v-else class="solid-nav-bar"><NavBar></NavBar></div>
     <router-view />
     <Footer></Footer>
   </div>
@@ -44,8 +45,12 @@ body {
   background: #23263F
 }
 
-.content {
-
+.solid-nav-bar {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+  height: 130px;
+  background: #23263F;
 }
-
 </style>
